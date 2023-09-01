@@ -1,0 +1,140 @@
+<style>
+  .watermark {
+    background-image: url('images/watermark.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 1200px;
+    padding: 200px 15px;
+    margin: 0 auto;
+  }
+  .invoice-container {
+    padding: 120px 0;
+    background-color: #fff;
+  }
+  table.one {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .one th {
+    background-color: #ccc;
+  }
+  .one td,
+  .one th {
+    border: 2px solid #6c6b6b;
+    text-align: left;
+    padding: 8px;
+  }
+  .two {
+    margin-top: 40px;
+    margin-left: auto;
+  }
+  .two td,
+  .two th,
+  .invoice-table td {
+    padding: 8px;
+  }
+  .two td:last-child {
+    text-align: right;
+  }
+  .invoice-table td:first-child {
+    font-weight: 700;
+  }
+</style>
+<div class="logo" style="margin-top: 60px; margin-bottom: 160px; font-size: 24px; max-width: 1200px; padding: 0 15px; margin-left: auto; margin-right: auto">
+  <img src="images/logo.png" alt="Logo" />
+</div>
+<div class="invoice" style="max-width: 1200px; padding: 0 15px; margin-left: auto; margin-right: auto">
+  <h1>Invoice</h1>
+  <div class="flex" style="display: flex; align-items: center; justify-content: space-between">
+    <div class="left">
+      <p style="line-height: 1.5">
+        Roseview Ltd <br />
+        1345 High road <br />
+        London <br />
+        N20 9HR <br />
+        United Kingdom
+      </p>
+    </div>
+    <div class="right">
+      <table class="invoice-table">
+        <tr>
+          <td>Invoice Number:</td>
+          <td>1354</td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>21/07/2023</td>
+        </tr>
+        <tr>
+          <td>Due Date:</td>
+          <td>21/07/2023</td>
+        </tr>
+        <tr>
+          <td>Account:</td>
+          <td>ROSE02</td>
+        </tr>
+        <tr>
+          <td>Purchase Order:</td>
+          <td>291 Kirkdale, Sydenham</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="watermark">
+  <div class="invoice-container">
+    <table class="one">
+      <tr>
+        <th>Qty</th>
+        <th style="width: 100%">Description</th>
+        <th>Rate</th>
+        <th>Total</th>
+        <th>VAT</th>
+      </tr>
+      <tr>
+        <td>01</td>
+        <td>Materials: <br />On Site</td>
+        <td>50,000.00</td>
+        <td>50,000.00</td>
+        <td>2500.00</td>
+      </tr>
+      <tr>
+        <td>01</td>
+        <td>Labour:</td>
+        <td>30,000.00</td>
+        <td>30,000.00</td>
+        <td>1500.00</td>
+      </tr>
+    </table>
+    <table class="two">
+      <tr>
+        <td>Total Net Amount:</td>
+        <td>£80,000.00</td>
+      </tr>
+      <tr>
+        <td>VAT @ 5%:</td>
+        <td>£4,000.00</td>
+      </tr>
+      <tr>
+        <td>Total:</td>
+        <td>£84,000.00</td>
+      </tr>
+      <tr>
+        <td style="width: 200px">Less CIS deduction:</td>
+        <td>(£6,000.00)</td>
+      </tr>
+      <tr>
+        <td>AMOUNT DUE:</td>
+        <td>£78,000.00</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="footer" style="margin-top: 150px; font-size: 24px; max-width: 1200px; padding: 0 15px; margin-left: auto; margin-right: auto">
+  <p>
+    Duratec roofing Ltd <br />
+    info@duratecroofing.co.uk
+  </p>
+</div>
